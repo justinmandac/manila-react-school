@@ -1,0 +1,63 @@
+@import "bourbon/bourbon";
+@import "neat/neat";
+@import "colors";
+
+html, body {
+  height: 100%;
+  font-family: sans-serif;
+  background-color:   #2980B9;
+  color: $white;
+  padding: 0;
+  margin: 0;
+}
+
+
+h1, h2, h3, h4 {
+  margin-top: 0;
+}
+
+.blog-header {
+  background-color: #E74C3C;
+}
+
+.react-blog-editor {
+  background-color: #3498DB;
+  min-height: 100vh;
+}
+
+.input-meta {
+  padding-bottom: 10px;
+}
+
+.word-count {
+  margin-left: 10px;
+}
+
+.react-blog-editor, .input-area {
+  @include outer-container(960px);
+}
+
+.blog-editor, .markdown-display {
+  @include span-columns(6);
+}
+
+.blog-editor .blog-editor__input {
+  width: 100%;
+  height: 100%;
+   resize: none;
+   border : none;
+   outline: none;
+}
+
+.submit-button {
+  background-color: #E74C3C  ;
+  border: 0px;
+  padding: 8px;
+  color: $white  ;
+  border-radius: 5px;
+  outline: none;
+
+  &[disabled] {
+      background-color: #2C3E50;
+  }
+}

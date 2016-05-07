@@ -1,0 +1,39 @@
+@import "colors";
+
+html, body {
+  font-family: sans-serif;
+}
+
+
+.fizz-buzz-timers {
+  overflow: hidden;
+}
+
+.fizz-buzz-timer {
+  float: left;
+  min-height: 60px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+
+  &.timer--stopped {
+    background-color: #E74C3C;
+  }
+}
+
+.fizz-buzz__counter {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+button {
+  border: none;
+  padding: 8px;
+  outline: none;
+}
+
+.fizz-buzz__add-button {
+  background-color: #3498DB;
+  color: #FFF;
+  min-height: 60px;
+  width: 100%;
+}

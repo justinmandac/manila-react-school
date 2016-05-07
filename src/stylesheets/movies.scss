@@ -1,0 +1,23 @@
+@import "bourbon/bourbon";
+@import "neat/neat";
+
+.movie {
+  @include outer-container;
+}
+
+.title, .year, .rating, .actors {
+  @include span-columns(3);
+  padding: 0 15px;
+}
+
+.bad {
+  color: red;
+}
+
+.okay {
+  color: yellow;
+}
+
+.good {
+  color: green
+}
